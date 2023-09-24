@@ -286,7 +286,56 @@ let recipes = {
         "name":"Screw",
         "tier":2,
         "count":2
-      },]
+      },],
+    "ProductionBooster":[
+      {
+        "name":"Plate",
+        "tier":2,
+        "count":4
+      },
+      {
+        "name":"CircuitWire",
+        "tier":2,
+        "count":1
+      },
+      {
+        "name":"Chip",
+        "tier":1,
+        "count":4
+      },],
+    "AccelerationBooster":[
+      {
+        "name":"CircuitWire",
+        "tier":4,
+        "count":4
+      },
+      {
+        "name":"Plate",
+        "tier":4,
+        "count":4
+      },
+      {
+        "name":"Chip",
+        "tier":2,
+        "count":1
+      },],
+    "ResourceBooster":[
+      {
+        "name":"Plate",
+        "tier":3,
+        "count":6,
+      },
+      {
+        "name":"Chip",
+        "tier":1,
+        "count":2,
+      },
+      {
+        "name":"CircuitWire",
+        "tier":4,
+        "count":1
+      }
+    ]
   },
   "2": {
     "Oven":[
@@ -635,6 +684,64 @@ let recipes = {
         "name":"WhiteProducer",
         "tier":1,
         "count":1
+      }],
+    "ProductionBooster":[
+      {
+        "name":"Plate",
+        "tier":7,
+        "count":6,
+      },
+      {
+        "name":"Chip",
+        "tier":3,
+        "count":4,
+      },
+      {
+        "name":"CircuitWire",
+        "tier":7,
+        "count":4,
+      },
+      {
+        "name":"ProductionBooster",
+        "tier":1,
+        "count":1
+      }],
+    "AccelerationBooster":[
+      {
+        "name":"CircuitWire",
+        "tier":8,
+        "count":8
+      },
+      {
+        "name":"Chip",
+        "tier":3,
+        "count":4,
+      },
+      {
+        "name":"RainbowPlate",
+        "tier":0,
+        "count":2
+      }],
+    "ResourceBooster":[
+      {
+        "name":"Block",
+        "tier":7,
+        "count":4,
+      },
+      {
+        "name":"Chip",
+        "tier":3,
+        "count":2
+      },
+      {
+        "name":"CircuitWire",
+        "tier":8,
+        "count":2
+      },
+      {
+        "name":"ResourceBooster",
+        "tier":1,
+        "count":1
       }]
   },
   "3": {
@@ -973,7 +1080,80 @@ let recipes = {
         "name":"WhiteProducer",
         "tier":2,
         "count":1
-      }]
+      }],
+    "ProductionBooster":[
+      {
+        "name":"DenseBlock",
+        "tier":10,
+        "count":12
+      },
+      {
+        "name":"CircuitWire",
+        "tier":10,
+        "count":4
+      },
+      {
+        "name":"VoidEssence",
+        "tier":0,
+        "count":4
+      },
+      {
+        "name":"ProductionBooster",
+        "tier":2,
+        "count":4
+      }],
+    "AccelerationBooster":[{
+      "name":"DenseBlock",
+      "tier":10,
+      "count":12
+    },
+    {
+      "name":"Chip",
+      "tier":5,
+      "count":6,
+    },
+    {
+      "name":"RainbowPlate",
+      "tier":0,
+      "count":4
+    },
+    {
+      "name":"VoidEssence",
+      "tier":0,
+      "count":4
+    },
+    {
+      "name":"AccelerationBooster",
+      "tier":2,
+      "count":2
+      }],
+    "ResourceBooster":[
+      {
+        "name":"Chip",
+        "tier":4,
+        "count":6
+      },
+      {
+        "name":"Block",
+        "tier":10,
+        "count":4
+      },
+      {
+        "name":"RainbowPlate",
+        "tier":0,
+        "count":2
+      },
+      {
+        "name":"VoidEssence",
+        "tier":0,
+        "count":1
+      },
+      {
+        "name":"ResourceBooster",
+        "tier":2,
+        "count":1
+      }
+    ]
   },
   "4": {
     "Oven":[
@@ -3347,15 +3527,79 @@ let parts = {
     "name":"Block",
     "tier":0,
     "count":1
-  }]
+  }],
+  "RainbowPlate":[{
+    "name":"RainbowIngot",
+    "tier":0,
+    "count":1
+  }],
+  "RainbowIngot":[{
+    "name":"RainbowDust",
+    "tier":0,
+    "count":1
+  }],
+  "RainbowDust":[
+    {
+      "name":"Dust",
+      "tier":1,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":2,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":3,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":4,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":5,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":6,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":7,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":8,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":9,
+      "count":1
+    },
+    {
+      "name":"Dust",
+      "tier":10,
+      "count":1
+    },
+  ]
 }
 let config = {
   "tiers":10,
   "machines":["Oven", "Assembly", "Refiner",
   "Crusher", "Cutter", "Presser", "Mixer",
   "Belt", "Shaper", "Boiler", "ExoticProducer","GemProducer",
-  "WhiteProducer"],
+  "WhiteProducer", "ProductionBooster", "AccelerationBooster",
+  "ResourceBooster"],
   "parts":["Ingot", "CircuitWire", "Cable", "Wire", "CircuitPlate",
   "Screw", "Plate", "DensePlate", "Rod", "Ring",
-  "BoiledBlock", "Block", "Pump", "Motor"]
+  "BoiledBlock", "Block", "Pump", "Motor", "RainbowPlate",
+  "RainbowIngot", "RainbowDust", "VoidEssence"]
 }
