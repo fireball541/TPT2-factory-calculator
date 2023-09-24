@@ -721,6 +721,11 @@ let recipes = {
         "name":"RainbowPlate",
         "tier":0,
         "count":2
+      },
+      {
+        "name":"AccelerationBooster",
+        "tier":1,
+        "count":2
       }],
     "ResourceBooster":[
       {
